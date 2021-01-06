@@ -1,0 +1,345 @@
+body
+{
+	margin:0;
+  background-color:#e3e3e3;
+}
+
+.checked {
+  color: orange;
+}
+#top
+{
+  width:100%;
+  height:13%;
+  margin: auto;
+ background-color:#e3e3e3;
+	position:fixed;
+	z-index:1;
+	
+ 
+}
+#nav
+{
+	height:7%;
+	width:100%;
+	margin:auto;
+	top:13%;
+	background-color:yellow;
+	position:fixed;
+    z-index:1;
+	
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background-color: #111;
+}
+#container
+{
+	width:100%;
+	height:70%;
+	margin:auto;
+	top:20%;
+	overflow:auto;
+background-color:#e3e3e3;
+	position:relative;
+
+}
+#restaurants
+{
+	width:100%
+	
+}
+#restaurants td
+{
+	padding:15px;
+}
+
+.box img
+{
+	border-radius: 5px;
+}
+.box
+{
+	border-radius: 5px;
+	max-width:70%;
+	max-height:30%;
+	background-color:white;
+	position:relative;
+	margin-left:1;
+	margin-bottom:1;
+	margin-right:0;
+	margin-top:1;
+  
+}
+
+.box:hover
+{
+  
+  
+}
+/*.img_container 
+{
+  width:100%;
+  height:50%;
+  position: relative;
+}*/
+.img_container
+{
+  position: relative;
+  height:40%;
+  width: 100%;
+
+  }
+  
+.data_container
+{
+  position: relative;
+  width: 100%;
+   
+}
+#footer
+{
+	top:92%;
+	width:100%;
+	height:7%;
+	margin:auto;
+background-color:#e3e3e3;
+	position:fixed;
+	z-index:1;
+
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 0px 0;
+  position: relative;
+}
+
+
+img.avatar {
+  width: 60%;
+  border-radius: 3%;
+}
+
+.in_container {
+  padding: 0px;
+  margin:0px;
+
+
+}
+.in_container4
+{
+    padding: 0px;
+  margin:0px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: black;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+#in_container4
+{
+    padding: 0px;
+  margin:0px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: black;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+#in_container5
+{
+
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 15px;
+letter-spacing: 2.8px;
+word-spacing: 0.2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+}
+.rest_img
+{
+   max-width: 100%;
+        max-height: 100%;
+}
+.in_container3 {
+  padding: 0px;
+  margin:0px;
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 19px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #9E9E9E;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+}
+.in_container2 {
+  padding: 5px;
+  margin:5px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.navright
+{
+	float:right;
+}
+/* Modal Content/Box */
+.modal-content {
+
+  border-radius: 1%;
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+.modal-content2 {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+.myheading 
+{
+
+font-size: 65px;
+text-align: center;
+
+text-shadow: 3px 5px 2px white, 2px 2px 2px  rgb(0, 0, 0);
+}
+.myheading2 
+{
+
+font-size: 65px;
+text-align: center;
+
+text-shadow: 3px 5px 2px white, 2px 2px 2px rgba(255,255,255,0);
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+

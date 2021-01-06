@@ -1,0 +1,138 @@
+.both
+{
+	width:100%;
+	min-height:50%;
+	top:20%;
+	position: relative;
+
+}
+.both_profile
+{
+
+	width:40%;
+	height:60%;
+	left:20%;
+
+	position:relative;
+}
+.profile_img
+{
+	width:40%;
+	height:50%;
+	position: relative;
+
+	float:left;
+	margin: 0px;
+	top:20%;
+
+}
+.profile_detail
+{
+	width:57%;
+	height:70%;
+	position: relative;
+
+	float:left;
+	top:20%;
+	margin-left: 0px;
+
+
+}
+.profile_bottom
+{
+	width:100%;
+	height:29%;
+	position: relative;
+border-top: 3px double #000000;
+	float: left;
+	margin-left: 0px;
+
+
+}
+.both_bottom
+{
+	text-align:center;
+	width:100%;
+	height:40%;
+
+	position:relative;
+
+}
+
+.img_p
+{
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+	height:100%;
+	
+	right:60%;
+
+	position: absolute;
+}
+.profile_p
+{
+
+	width: 30%;
+	min-height: 10%;
+	position: absolute;
+	top:30%;
+	left:35%;
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 15px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #7F7F7F;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+}
+.text_style
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+left:10%;
+}
+.text_style2
+{
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 15px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #7F7F7F;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+}
+.text_style3
+{
+	
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+position: absolute;
+bottom:29%;
+left:42%;
+
+
+}

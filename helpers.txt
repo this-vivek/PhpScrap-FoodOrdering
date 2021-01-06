@@ -1,0 +1,155 @@
+
+Setting environment for using XAMPP for Windows.
+Charlie@CHARLIE-PC c:\xampp
+# msql -u root -p
+'msql' is not recognized as an internal or external command,
+operable program or batch file.
+
+Charlie@CHARLIE-PC c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 704
+Server version: 10.4.8-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use foodordering
+ERROR 1049 (42000): Unknown database 'foodordering'
+MariaDB [(none)]> show database
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MariaDB server version for the right syntax to use near 'dat
+abase' at line 1
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| foodoordering      |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [(none)]> use foodoordering;
+Database changed
+MariaDB [foodoordering]> insert into customer(name,contact,uname,pass)values(viv
+ek,8126279903,charlie,12345);
+ERROR 1054 (42S22): Unknown column 'vivek' in 'field list'
+MariaDB [foodoordering]> insert into customer(name,contact,uname,pass)values(viv
+ek,8126279903,charlie,12345);
+ERROR 1054 (42S22): Unknown column 'vivek' in 'field list'
+MariaDB [foodoordering]> insert into customer(name,contact,uname,pass)values('vi
+vek',8126279903,'charlie',12345);
+Query OK, 1 row affected, 1 warning (0.083 sec)
+
+MariaDB [foodoordering]> insert into restaurant values(61,'rs rasoi',12345);
+Query OK, 1 row affected (0.060 sec)
+
+MariaDB [foodoordering]> insert into item values(121,'soya chaap',61);
+Query OK, 1 row affected (0.063 sec)
+
+MariaDB [foodoordering]> insert into item(food_n,r_id) values('biriyani',61);
+Query OK, 1 row affected (0.088 sec)
+
+MariaDB [foodoordering]> insert into restaurant(r_name,password) values('katani'
+,12345);
+Query OK, 1 row affected (0.076 sec)
+
+MariaDB [foodoordering]> insert into item(food_n,r_id) values('momo',62);
+Query OK, 1 row affected (0.034 sec)
+
+MariaDB [foodoordering]> select * from item;
++------+------------+------+
+| f_id | food_n     | r_id |
++------+------------+------+
+|  121 | soya chaap |   61 |
+|  122 | biriyani   |   61 |
+|  123 | momo       |   62 |
++------+------------+------+
+3 rows in set (0.001 sec)
+
+MariaDB [foodoordering]> insert into order_c values(61,1,62,123,0);
+Query OK, 1 row affected (0.084 sec)
+
+MariaDB [foodoordering]> insert into order_r values(91,62,1,123,0);
+Query OK, 1 row affected (0.074 sec)
+
+MariaDB [foodoordering]> select food_n from item where r_id=61;
++------------+
+| food_n     |
++------------+
+| soya chaap |
+| biriyani   |
++------------+
+2 rows in set (0.001 sec)
+
+MariaDB [foodoordering]> select item.food_n from order_c,item where order_c.uid=
+1 and order_c.status=0;
++------------+
+| food_n     |
++------------+
+| soya chaap |
+| biriyani   |
+| momo       |
++------------+
+3 rows in set (0.001 sec)
+
+MariaDB [foodoordering]> select item.food_n from order_c,item where order_c.uid=
+1 and order_c.status=0 and order_c.f_id=item.f_id;
++--------+
+| food_n |
++--------+
+| momo   |
++--------+
+1 row in set (0.001 sec)
+
+MariaDB [foodoordering]>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Display some text when the checkbox is checked:</p>
+
+<p id="item1" >kabab price 50</p>Checkbox: <input type="checkbox" id="myCheck"  onclick="myFunction();" value=50>
+<p id="item2" >pizza price 60</p>Checkbox: <input type="checkbox" id="myCheck2"  onclick="myFunction();" value=60>
+<br><br>
+<br>
+<p id="demo" style="display:block"></p>
+
+
+<script>
+function myFunction() {
+ var x="";
+var y="";
+if(document.getElementById("myCheck").checked==true)
+{
+ x = document.getElementById("myCheck").value;
+  x=parseInt(x);
+  }
+  
+  if(document.getElementById("myCheck2").checked==true)
+{
+ y = document.getElementById("myCheck2").value;
+ y=parseInt(y);
+  }
+  
+   
+  document.getElementById("demo").innerHTML = x+y;
+}
+</script>
+
+</body>
+</html>
